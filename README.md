@@ -4,7 +4,7 @@ I'm not sure what exactly the expected behaviour is. However, based on this [.NE
 
 In general the problem is that the required assemblies from NuGet packages referenced by the class Library `LibWithRef` are not copied into the output folder of the console application `NuGetRefTest`.
 
-According to this [article by Scott Hanselman](https://www.hanselman.com/blog/ReferencingNETStandardAssembliesFromBothNETCoreAndNETFramework.aspx) as well as other issues on GitHub (like microsoft/msbuild#1582), the are problems when combining .NET Standard and .NET Framework. However, in this example the class library as well as console application both target .NET Framework 4.6.1.
+According to this [article by Scott Hanselman](https://www.hanselman.com/blog/ReferencingNETStandardAssembliesFromBothNETCoreAndNETFramework.aspx), as well as issues on GitHub (like microsoft/msbuild#1582), there are problems when combining .NET Standard and .NET Framework. However, in this example the class library as well as console application both target .NET Framework 4.6.1.
 
 ## Reproduce Error by
 
